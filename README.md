@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# NX - App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**NX - App**, esta realizado en ReactJS, utilizando functional components.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Uso
+
+Para su uso, es necesario agregar un archivo .env, donde se va a definir la URL de la api:
+
+```
+REACT_APP_API_URL=http://localhost:3005/api
+```
+
+Una vez configurado se puede ejecutar con:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## TODO's
 
-### `npm test`
+Bueno....aun faltan bastante features que me quedaron pendiente y aun no pude continuar:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Envio de mails
+- Enviar el mail de registracion para que confirme, y el mail para habilitar el cambio de password.
 
-### `npm run build`
+### UI
+- Agregar la configuracion de categorias por usuario, para esto hay que crear la tabla de configuracion.
+- Agregar que se pueda reiniciar el password de un usuario. (password olvidado)
+- Agregar los google captcha para los login y el registro.
+- Agregar el metodo para los mods que puedan borrar cosas. No se van a borrar, pero se van a grabar en una tabla independiente y despues se decide que hacer.
+- Agregar que se pueda generar una boludes interesante, como la de los colores, posibles ideas:
+	 Un generador de nombre al azar para todos los usuarios del post, y que se mantenga el mismo para todos durante la vida de ese post. No seria el estilo por defecto. (como id unico)
+- Agregar algo visual, como lo de los colores, o algna imagen chiquita.
+- Ver como optimizar los enums y ese tipo de cosas: Roles, etc.
+- Ver que hacemos con el tema de los errores por validation, habria que agregar que los parsee y los devuelva en forma de lista.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Notificaciones de UI
+- Agregar las notificaciones mediante socket.io
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Contribuciones
+Todas las pull request son bienvenidas.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Screenshots
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Les paso algunas capturas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![mobile](https://user-images.githubusercontent.com/15146550/122689799-bfcfdf80-d1fb-11eb-9fcd-f39af4352b3f.png)
+![new post](https://user-images.githubusercontent.com/15146550/122689800-c1010c80-d1fb-11eb-8926-060a8a7c99d0.png)
+![post](https://user-images.githubusercontent.com/15146550/122689801-c199a300-d1fb-11eb-9128-55cd74d855db.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licencia
+[MIT](https://choosealicense.com/licenses/mit/)
