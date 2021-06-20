@@ -1,0 +1,51 @@
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+#imagen {
+    img {
+        width: 50vw;
+        object-fit: cover;
+        @media (min-width: $bootstrap-sm) {
+            width: 20vw;
+        }
+        @media (min-width: $bootstrap-lg) {
+            width: 15vw;
+        }
+    }
+}
+
+.comentarioVideo {
+    position: relative;
+    padding-top: 56.25%/* Player ratio: 100 / (1280 / 720) */
+}
+
+.fondo-oscuro-comentario {
+    background: #2b2f34 !important
+}
+
+.fondo-oscuro-comentario-seleccionado {
+    background: #2f342b !important
+}
+
+.fuente {
+    white-space: pre-line;
+}
+
+.fuenteLinkComentario {
+    cursor: pointer;
+    white-space: pre-line;
+    color: #3498db !important;
+}
+
+.imgThread {
+    width: 100%;
+    max-width: 450px;
+    height: "auto";
+    padding-left: 0px;
+    margin-right: 0px;
+}
+
+.imgComentarioFlotante {
+    width: 8vw !important;
+}

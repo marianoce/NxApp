@@ -1,0 +1,14 @@
+.modalFlotante {
+    position: fixed;
+    z-index: 1050;
+    width: 100%;
+    outline: 0;
+    background: #2b2f34;
+    border-radius: 5px;
+    color: #333333;
+    display: inline;
+    min-height: 40px;
+    max-width: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+}

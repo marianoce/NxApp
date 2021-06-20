@@ -1,0 +1,25 @@
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+// Crop thumbnail images.
+// #imagenThread {
+//     img {
+//         max-width: 60%;
+//         height: auto;
+//     }
+// }
+.fondo-oscuro-navbar {
+    background: #2b2f34 !important;
+}
+
+.fuenteNavbar {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    font-weight: 750;
+    position: relative;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 4px #000000;
+    cursor: pointer
+}

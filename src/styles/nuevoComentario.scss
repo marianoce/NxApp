@@ -1,0 +1,30 @@
+// None of this CSS is required for the gallery and lightbox to function.
+// --- BEGIN: crop images --- //
+// Optional CSS for cropping images that aren't all the same size.
+// Use Bootstrap breakpoints for consistency.
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+// Crop thumbnail images.
+.divPreviewImagen {
+    img {
+        height: 30vw;
+        object-fit: cover;
+        @media (min-width: $bootstrap-sm) {
+            height: 20vw;
+        }
+        @media (min-width: $bootstrap-lg) {
+            height: 8vw;
+        }
+    }
+}
+
+.divPreviewVideo {
+    position: relative;
+    padding-top: 56.25%/* Player ratio: 100 / (1280 / 720) */
+}
+
+.top-left {
+    position: absolute;
+}

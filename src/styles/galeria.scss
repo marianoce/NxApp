@@ -1,0 +1,102 @@
+// None of this CSS is required for the gallery and lightbox to function.
+// --- BEGIN: crop images --- //
+// Optional CSS for cropping images that aren't all the same size.
+// Use Bootstrap breakpoints for consistency.
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+// Crop thumbnail images.
+#galeria {
+    img {
+        height: 45vw;
+        object-fit: cover;
+        @media (min-width: $bootstrap-sm) {
+            height: 40vw;
+        }
+        @media (min-width: $bootstrap-lg) {
+            height: 15vw;
+        }
+    }
+    img.darken {
+        display: block;
+        -webkit-transition: all 0.15s linear;
+        -moz-transition: all 0.15s linear;
+        -ms-transition: all 0.15s linear;
+        -o-transition: all 0.15s linear;
+        transition: all 0.15s linear;
+    }
+    img.darken:hover {
+        filter: brightness(55%);
+    }
+}
+
+#imagenNewThread {
+    img {
+        height: 30vw;
+        object-fit: cover;
+        @media (min-width: $bootstrap-sm) {
+            height: 20vw;
+        }
+        @media (min-width: $bootstrap-lg) {
+            height: 8vw;
+        }
+    }
+}
+
+.bottom {
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    background: inherit;
+    background-attachment: fixed;
+    overflow: hidden;
+    text-align: left;
+    backdrop-filter: blur(4px);
+}
+
+.bottom>p {
+    width: 100%;
+    background: inherit;
+    background-attachment: fixed;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fuenteGaleria {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+    color: white;
+    //text-shadow: 3px 3px 4px #000000;
+    text-shadow: 1px 1px 2px black, 0 0 5px black, 0 0 5px black;
+    //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
